@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Login and Registration Form </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+    <meta name="description" content="Login and Registration Form with HTML5 and CSS3" />
+    <meta name="keywords" content="html5, css3, form, switch, animation, :target, pseudo-class" />
+    <meta name="author" content="Codrops" />
+    <link rel="shortcut icon" href="../favicon.ico">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+            integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
+        <title>Gyan Sagar</title>
+        <link rel="icon" href="images/gyansagarlogo.png">
+
+</head>
+
+<style>
+    body{
+        background-color:#FFF8DC;
+    }
+    /* Add a black background color to the top navigation bar */
+    .tpnav {
+        overflow: hidden;
+    }
+
+    /* Style the links inside the navigation bar */
+    .tpnav a {
+        float: left;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    /* Change the color of links on hover */
+    .tpnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    /* Style the "active" element to highlight the current page */
+    .tpnav a.active {
+        background-color: #2196F3;
+        color: white;
+    }
+
+    /* Style the search box inside the navigation bar */
+    .tpnav input[type=text] {
+        float: right;
+        padding: 6px;
+        border: none;
+        margin-top: 8px;
+        margin-right: 16px;
+        font-size: 17px;
+    }
+
+    /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+    @media screen and (max-width: 600px) {
+
+        .tpnav a,
+        .tpnav input[type=text] {
+            float: none;
+            display: block;
+            text-align: left;
+            width: 100%;
+            margin: 0;
+            padding: 14px;
+        }
+
+        .tpnav input[type=text] {
+            border: 1px solid #ccc;
+        }
+
+        .nav-link {
+            color: white !important;
+            display: block !important
+        }
+</style>
+
+
+<body>
+
+<!---Start navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar fixed-top  navbar-light bg-dark">
+    <img src="images/gyansagarlogo.png" width="50" height="50" class="d-inline-block" alt="">
+    <a class="navbar-brand" href="index.html">
+        <b style="color:white;">Gyan Sagar </b>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="choose.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Collections.html">Collections</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="login.html">Log In</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="feedback.html">Feedback</a>
+            </li>
+            <!-- <li class="nav-item">
+					    	<a href="#" class="language" rel="it-IT"><img src="images/italy.ico" class="flag" alt="Italiano"></a>
+					    	<a href="index.html" class="language" rel="en-En"><img src="images/english.ico" class="flag" alt="English"></a>
+					    </li> -->
+            <div class="tpnav">
+
+                <input type="text" placeholder="Search..">
+            </div>
+        </ul>
+    </div>
+</nav><br><br><br>
+<!--- End Navigation Bar -->
+<br><br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+             
+                    <div id="logreg-forms">
+                        <form class="form-signin">
+                            
+                            <h1 class="h1 mb-3 font-weight-normal" style="text-align: center">Admin Log In</h1>
+                            <div class="social-login">
+                                <button class="btn facebook-btn social-btn" type="button"><span><i class="fab fa-facebook-f"></i> Sign in
+                                        with Facebook</span> </button>
+                                <button class="btn google-btn social-btn" type="button"><span><i class="fab fa-google-plus-g"></i> Sign in
+                                        with Google+</span> </button>
+                            </div>
+                            <p style="text-align:center"> OR </p>
+                            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+                            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+                    
+                            <button class="btn btn-success btn-block" type="submit"><i class="fas fa-sign-in-alt"></i> Sign in</button>
+                            <a href="#" id="forgot_pswd">Forgot password?</a>
+                            <hr>
+                            <!-- <p>Don't have an account!</p>  -->
+                            <button class="btn btn-primary btn-block" type="button" id="btn-signup"><i class="fas fa-user-plus"></i> Sign up
+                                New Account</button>
+                        </form>
+                    
+                        <form action="/reset/password/" class="form-reset">
+                            <input type="email" id="resetEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+                            <button class="btn btn-primary btn-block" type="submit">Reset Password</button>
+                            <a href="#" id="cancel_reset"><i class="fas fa-angle-left"></i> Back</a>
+                        </form>
+                    
+                        <form action="/signup/" class="form-signup">
+                            <div class="social-login">
+                                <button class="btn facebook-btn social-btn" type="button"><span><i class="fab fa-facebook-f"></i> Sign up
+                                        with Facebook</span> </button>
+                            </div>
+                            <div class="social-login">
+                                <button class="btn google-btn social-btn" type="button"><span><i class="fab fa-google-plus-g"></i> Sign up
+                                        with Google+</span> </button>
+                            </div>
+                    
+                            <p style="text-align:center">OR</p>
+                    
+                            <input type="text" id="user-name" class="form-control" placeholder="Full name" required="" autofocus="">
+                            <input type="email" id="user-email" class="form-control" placeholder="Email address" required autofocus="">
+                            <input type="password" id="user-pass" class="form-control" placeholder="Password" required autofocus="">
+                            <input type="password" id="user-repeatpass" class="form-control" placeholder="Repeat Password" required
+                                autofocus="">
+                    
+                            <button class="btn btn-primary btn-block" type="submit"><i class="fas fa-user-plus"></i> Sign Up</button>
+                            <a href="#" id="cancel_signup"><i class="fas fa-angle-left"></i> Back</a>
+                        </form>
+                        <br>
+                         </div>
+                         </div>
+
+
+      <div class="col-lg-6">
+        <section>
+            <div id="container_demo">
+                <!-- hidden anchor to stop jump http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4  -->
+                <a class="hiddenanchor" id="toregister"></a>
+                <a class="hiddenanchor" id="tologin"></a>
+                <div id="wrapper">
+                        <div id="login" class="animate form">
+                        <form action="payment.html" autocomplete="on">
+                            <h1> Student's Log in</h1>
+                            <p>
+                                <label for="username" class="uname"> Roll No. </label>
+                                <input id="username" name="username" required="required" type="text"
+                                    placeholder="SG18302" />
+                            </p>
+                            <p>
+                                <label for="password" class="youpasswd"> Password </label>
+                                <input id="password" name="password" required="required" type="password"
+                                    placeholder="eg. X8d90EO" />
+                            </p>
+                            <p class="keeplogin">
+                                <input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" />
+                                <label for="loginkeeping">Keep me logged in</label>
+                            </p>
+
+                            <p class="login button" id="demo"> 
+                                <input type="submit" value="Login" onclick="myFunction()"/> 
+                                <script>
+                                function myFunction(){     
+                                    if(confirm("You have some Library fine. Click OK to view your fine.")){
+                                       document.location.href='payment.html'
+                                    }
+                                }
+                                </script>
+                            </p>
+                            
+                            <p class="change_link">
+                                Not a member yet ?
+                                <a href="#toregister" class="to_register">Join </a>
+                            </p>
+                        </form>
+                    </div>
+
+                    <div id="register" class="animate form">
+                        <form>
+                            <h1> Sign up </h1>
+                            <p>
+                                <label for="usernamesignup" class="uname">Username</label>
+                                <input id="usernamesignup" name="usernamesignup" required="required" type="text"
+                                    placeholder="Archana Singh" />
+                            </p>
+                            <p>
+                                <label for="rollnosignup" class="URollNo">Roll No.</label>
+                                <input id="rollnosignup" name="rollnosignup" required="required" type="text"
+                                    placeholder="SG18302" />
+                            </p>
+                            <p>
+                                <label for="emailsignup" class="youmail"> Your email</label>
+                                <input id="emailsignup" name="emailsignup" required="required" type="email"
+                                    placeholder="mail@mail.com" />
+                            </p>
+                            <p>
+                                <label for="passwordsignup" class="youpasswd">Password </label>
+                                <input id="passwordsignup" name="passwordsignup" required="required" type="password"
+                                    placeholder="eg. X8d90EO" />
+                            </p>
+                            <p>
+                                <label for="passwordsignup_confirm" class="youpasswd">Confirm password </label>
+                                <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required"
+                                    type="password" placeholder="eg. X8d90EO" />
+                            </p>
+                            
+                            <p class="signin button" id="newDemo">
+                                <input type="submit" value="Sign up" onclick="popup() "/>
+                                <script>
+                                    function popup(){
+                                        alert("You are successfully Logged In")
+                                    }
+                                    </script>
+                            </p>
+
+                            <p class="change_link">
+                                Already a member ?
+                                <a href="#tologin" class="to_register"> Go and log in </a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </section>
+        </div>
+        </div>
+    </div>
+   
+<br><br><br><br><br><br><br><br>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script src="/script.js"></script>
+
+      <script>
+      function toggleResetPswd(e) {
+            e.preventDefault();
+            $('#logreg-forms .form-signin').toggle() // display:block or none
+            $('#logreg-forms .form-reset').toggle() // display:block or none
+        }
+
+        function toggleSignUp(e) {
+            e.preventDefault();
+            $('#logreg-forms .form-signin').toggle(); // display:block or none
+            $('#logreg-forms .form-signup').toggle(); // display:block or none
+        }
+
+        $(() => {
+            // Login Register Form
+            $('#logreg-forms #forgot_pswd').click(toggleResetPswd);
+            $('#logreg-forms #cancel_reset').click(toggleResetPswd);
+            $('#logreg-forms #btn-signup').click(toggleSignUp);
+            $('#logreg-forms #cancel_signup').click(toggleSignUp);
+        })
+      </script>
+
+
+        <!---Start of footer-->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6"><br>
+                        <h6 style="margin-left: -680px">Address:</h6>
+                        <p style="margin-left: -250px">Panjab University Swami Sarvanand Giri Regional Centre<br>
+                            Una Road, Bajwara, Hoshiarpur, Punjab 146021 <br> Phone: 0188 228 2617
+                    </div>
+                    <div class="col-lg-6"><br>
+                        <h6>Visit us via-</h6>
+        
+                        <p><a href="http://ssgpurc.puchd.ac.in/" style="margin-left: 250px">http://ssgpurc.puchd.ac.in/</a></p>
+                        <p style="margin-left:250px">Enquiry No(s): 1800-180-2065, +91 172 2534818, 2534866</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+</body>
+
+</html>

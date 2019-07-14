@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <title>Gyan Sagar</title>
+    <link rel="icon" href="images/gyansagarlogo.png">
+  
+
+   <style>
+       body{
+    background-color:#FFF8DC;
+  }
+   * {
+  box-sizing : border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+ 
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: left;
+  background-color: #f1f1f1;
+  
+}
+   </style>
+
+   </head>
+<style>
+    /* Add a black background color to the top navigation bar */
+    .tpnav {
+        overflow: hidden;
+    }
+
+    /* Style the links inside the navigation bar */
+    .tpnav a {
+        float: left;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    /* Change the color of links on hover */
+    .tpnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    /* Style the "active" element to highlight the current page */
+    .tpnav a.active {
+        background-color: #2196F3;
+        color: white;
+    }
+
+    /* Style the search box inside the navigation bar */
+    .tpnav input[type=text] {
+        float: right;
+        padding: 6px;
+        border: none;
+        margin-top: 8px;
+        margin-right: 16px;
+        font-size: 17px;
+    }
+
+    /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+    @media screen and (max-width: 600px) {
+
+        .tpnav a,
+        .tpnav input[type=text] {
+            float: none;
+            display: block;
+            text-align: left;
+            width: 100%;
+            margin: 0;
+            padding: 14px;
+        }
+
+        .tpnav input[type=text] {
+            border: 1px solid #ccc;
+        }
+
+    table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+        
+</style>
+
+<body>
+    <!---Start navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar fixed-top  navbar-light bg-dark">
+        <img src="images/gyansagarlogo.png" width="50" height="50" class="d-inline-block" alt="">
+        <a class="navbar-brand" href="index.html">
+            <b style="color:white;">Gyan Sagar </b>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="choose.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Collections.html">Collections</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Log In</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="feedback.html">Feedback</a>
+                </li>
+                <!-- <li class="nav-item">
+    					    	<a href="#" class="language" rel="it-IT"><img src="images/italy.ico" class="flag" alt="Italiano"></a>
+    					    	<a href="index.html" class="language" rel="en-En"><img src="images/english.ico" class="flag" alt="English"></a>
+    					    </li> -->
+                <div class="tpnav">
+    
+                    <input type="text" placeholder="Search..">
+                </div>
+            </ul>
+        </div>
+    </nav><br><br><br>
+    <br>
+    <!--- End Navigation Bar -->
+
+    <div class="acc-dropdown"  style="margin-left: 20px">
+    <h2 style="color:crimson; margin-left:20px;" >Library Policy</h2><br>
+    <button class="accordion"><h3>Borrowing Policy</h3></button>
+    <div class="panel">
+     
+     <p>All the students can borrow books from the Circulation Desk located on the 1st floor.
+    You will need your four-digit PIN and username <br>or your Roll No. to borrow books.
+    Standard books are borrowed for 2 weeks. If books are on a reading list,
+    they are often limited to <br> 3-day or 7-day to make sure everyone on a course gets
+    a chance to use them. Please note that reference material, journals and <br> newspapers cannot be borrowed.
+    Students have allowance of 4 books and they have to return or renew it within 15 days tenure.</p>
+    </div>
+
+
+    <button class="accordion"><h3>Returning Policy</h3> </button>
+    <div class="panel">
+    <p>Before returning the book you have to submit return request to the librarian. When you come with the returning
+    book, first you have to <br> verified it to the librarian at the Circulation Desk. After it's verification that this book
+    belongs to the Library and was issued in your <br>account, he will velidate your request. And it will be recorded that the
+    book
+    has been returned in your account.</p>
+    </div>
+
+    <button class="accordion"><h3>Renewing Policy</h3></button>
+    <div class="panel">
+    <p>You can renew your loans at the Cirulation Desk or you can also renew books online by signing into your account, only
+    when you do <br> not have any fine and the request for renewing should be within 2 weeks. Please ensure that the book is
+    returned by the new due date.<br> You will be fined for books that are overdue.</p>
+    </div>
+
+    <button class="accordion"><h3>Fine Policy</h3> </button>
+   <div class="panel">
+    <p>It is important for all library users to be able to access the material they need. Therefore, we charge fines on overdue
+    items to <br> encourage users to return material promptly. If the issued book is not submitted on submision date,then you will be
+    fined Rupee <br>2 per book. <br>
+    <ul>
+        <strong>To avoid fines:</strong>
+        <li>   Check your due dates regularly and renew items on your account.</li>
+     
+      <li>  Do not share your username and password to someone else - you are responsible for the items on your account.</li>
+        </ul>
+   
+    <strong>Note:</strong> If you owe the Library more than 100 rupee in fines, you will find that you are unable to borrow any more books,
+    or renew the <br> books that you already have.
+</p>
+    </div>
+</div>
+
+<meta charset="UTF-8">
+
+    <!-- Linking starts of vertical nav-->
+
+    <div class="container mtb">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="gap"><br><br><br></div>
+                <ul style="list-style: none;" class="nav flex-column" id="myTab1">
+
+                    <li class="nav-item"><a href="#vision NIa" class="nav-link active size"
+                            onclick="visionFunctionality()">Vision</a></li>
+                    <li class="nav-item"><a href="#mission NIa" class="nav-link size"
+                            onclick="missionFunctionality()" >Mission</a></li>
+                    <li class="nav-item"><a href="#belief NIa" class="nav-link size"
+                            onclick="beliefFunctionality()" >Values</a></li>
+                    <li class="nav-item"><a href="#collab NIa" class="nav-link size"
+                            onclick="collabFunctionality()" >Privacy Policy</a></li>
+                    <li class="nav-item"><a href="#funding NIa" class="nav-link size"
+                            onclick="fundingFunctionality()" >Protocols</a></li>
+                </ul>
+
+                <style>
+                    
+                    .NIa:active {
+                        background-color: #a6a5a4;
+                        border-radius: 5px;
+                        padding: 5px inherit 5px 5px;
+                        border: 1px solid #a6a5a4;
+                        color: #fd3300;
+                    }
+
+                    .size {
+                        font-size: 145%;
+                        color: #000 !important;
+                    }
+
+                    .size:hover {
+                        border: 1px solid #fd3300;
+                        border-radius: 5px;
+                        box-sizing: border-box;
+                        border-width: auto;
+                    }
+
+                    h2 {
+                        color: #760972;
+                    }
+                    
+                </style>
+
+            </div>
+
+            <div class="col-lg-9">
+                <div class="visibility" id="vision" style="display:block;">
+                    <div class="gap"><br><br></div>
+                    <div class="container" style="width: 75%;" >
+                        <div class="jumbotron">
+                            <h2 style="font-family: 'Merienda';">Vision</h2>
+                            <p style="font-family:Verdana, Geneva, Tahoma, sans-serif;">
+                                Our University library are engaged in learning and discovery as essential participants in educational Community. We
+                            develop, organize, provide access to and Preserve Materials to meet the needs of present and future generations of
+                            students. We explore and implement innovative technologies and services to deliver information and scholarly resources
+                            conveniently to users anytime anyplace. Our library will be recognized as an accessible and exceptional center of
+                            learning, research and creativity focused on student success. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="visibility active" id="mission" style="display:none;">
+                    <div class="gap"><br><br></div>
+                    <div class="container" style="width: 75%;">
+                        <div class="jumbotron">
+                            <h2 style="font-family: 'Merienda';">Misson</h2>
+                            <p style="font-family:Verdana, Geneva, Tahoma, sans-serif;"> Our University Library Strengthen
+                                 and enhance the Teaching, Research and Services. The library promote intellutual growth
+                            and creativity by developing Collections, Facilitating access to information resources and evaluation skills and offering
+                            research assistance. Our Library provides Inspirational Environments for Collaborative and individual discovery, study
+                            and learning. We promote reading and lifelong learning. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="visibility" id="belief" style="display:none;">
+                    <div class="gap"><br><br></div>
+                    <div class="container" style="width: 75%;">
+                        <div class="jumbotron">
+                            <h2 style="font-family: 'Merienda';">Value</h2>
+                        <p style="font-family:Verdana, Geneva, Tahoma, sans-serif;">
+                                <ul style="list-style-type: circle;">
+                                    <li>We recognize Users as our Primary Focus.</li>
+                                    <li>We are innovative and Proactive.</li>
+                                    <li>We support self-education, learning and research.</li>
+                                    <li>We respect our users privacy.</li>
+                                    <li>We Develop our human resources and support continuous Professional Development.</li>
+                                    <li>We aspire to be a flexible and Experimental organization that encourages innovation and staff
+                                        collaboration. </li>
+                                </ul>
+                        
+                        </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="collab" style="display:none;">
+                    <div class="gap"><br><br></div>
+                    <div class="container" style="width: 75%;">
+                        <div class="jumbotron">
+                            <h2 style="font-family: 'Merienda';">Privacy Policy</h2>
+                            <p style="font-family:Verdana, Geneva, Tahoma, sans-serif;"> It is policy of PUSSGRC University Library 
+                                that Privacy of all Users will be respected in Compliance. All the library
+                            records and Other information relating to an individuals use of the library and its resources are considered
+                            Confidential. These records include but not limited to Circulation records of library materials. We Protect Each library
+                            students right to privacy and Confidentially with respect to information sought or received and resources Consulted,
+                            Borrowed, Acquired Or Transmitted. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="visibility" id="funding" style="display:none;">
+                    <div class="gap"><br><br></div>
+                    <div class="container" style="width: 75%;">
+                        <div class="jumbotron">
+                            <h2 style="font-family: 'Merienda';">Protocols</h2>
+                            <p style="font-family:Verdana, Geneva, Tahoma, sans-serif;"> Welcomes you to an Environment Conducive to a variety of
+                                 study Needs and Intellutual pursuits. Our library provides
+                             quality services, excellence resources, comprehensive collections and a comfortable safe environment. The library code of conduct 
+                             applies to all library users like students, staff and members. Students are kindly requested not to make Noise or Disturb others
+                              working in Library and also not to misuse or damage library resources and to return books on time. Respect the rights of others
+                               by helping to create an Environment Suitable for learning. Please keep the library clean by Placing Trash in appropriate containers. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    
+    <div class="row"  style="margin-left: 400px">
+    <div class="column" style="width:40%" >
+        <div class="card">
+            <h3  style="color: maroon">Hours</h3>
+            <table>
+           <tr>
+            <th>Days</th>
+            <th>Opening Hours</th>
+            </tr>
+           <tr>
+            <td>Monday</td>
+            <td>9:00 am - 5:00 pm</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>9:00 am - 5:00 pm</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>9:00 am - 5:00 pm</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>9:00 am - 5:00 pm</td>
+            </tr>
+            <tr>
+                <td>Friay</td>
+                <td>9:00 am - 5:00 pm</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>Closed</td>
+            </tr>
+            <tr>
+                <td>Sunday</td>
+                <td>Closed</td>
+            </tr>
+            </table>
+            <b>Note:-  Library is closed on Government Holidays.</b>
+        </div>
+    </div>
+    
+    <div class="column" >
+        <div class="card">
+            <h4 style="color: maroon">Address</h4>
+            <p><b>Books Column -</b> 1st floor, oppo. Auditorum </p>
+            <p><b>Reading Hall -</b> 2nd floor, above Books Column. </p>
+            <p>Academic Block, PUSSGRC, Hoshiarpur Pin- 146001.</p>
+           
+        </div>
+    </div>
+    </div>
+    
+    <br><br>
+
+    <!-- Start of footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6"><br>
+                    <h6 style="margin-left: -700px">Address:</h6>
+                    <p style="margin-left: -250px">Panjab University Swami Sarvanand Giri Regional Centre<br>
+                        Una Road, Bajwara, Hoshiarpur, Punjab 146021 <br> Phone: 0188 228 2617
+                </div>
+                <div class="col-lg-6"><br>
+                    <h6>Visit us via-</h6>
+    
+                    <p><a href="http://ssgpurc.puchd.ac.in/" style="margin-left: 250px">http://ssgpurc.puchd.ac.in/</a></p>
+                    <p style="margin-left:250px">Enquiry No(s): 1800-180-2065, +91 172 2534818, 2534866</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+  
+
+
+    <script>
+        function collabFunctionality() {
+            var lefts = document.querySelectorAll("#vision, #mission, #belief, #funding");
+            document.getElementById("collab").style.display = "block";
+            var length = lefts.length;
+            for (var i = 0; i < length; i++) {
+                lefts[i].style.display = "none";
+            }
+        }
+
+        function visionFunctionality() {
+            var lefts = document.querySelectorAll("#collab, #mission, #belief, #funding");
+            document.getElementById("vision").style.display = "block";
+            var length = lefts.length;
+            for (var i = 0; i < length; i++) {
+                lefts[i].style.display = "none";
+            }
+        }
+
+        function missionFunctionality() {
+            var lefts = document.querySelectorAll("#collab, #vision, #belief, #funding");
+            document.getElementById("mission").style.display = "block";
+            var length = lefts.length;
+            for (var i = 0; i < length; i++) {
+                lefts[i].style.display = "none";
+            }
+        }
+
+        function beliefFunctionality() {
+            var lefts = document.querySelectorAll("#collab, #vision, #mission, #funding");
+            document.getElementById("belief").style.display = "block";
+            var length = lefts.length;
+            for (var i = 0; i < length; i++) {
+                lefts[i].style.display = "none";
+            }
+        }
+
+        function fundingFunctionality() {
+            var lefts = document.querySelectorAll("#collab, #vision, #mission, #belief");
+            document.getElementById("funding").style.display = "block";
+            var length = lefts.length;
+            for (var i = 0; i < length; i++) {
+                lefts[i].style.display = "none";
+            }
+        }
+
+    </script> 
+<!--Linking ends of vertical nav-->
+
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+ </script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+     integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous">
+ </script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+     integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous">
+ </script>
+
+
+</body>
+<script src="js/jquery.js"></script>
+/* Accordion Script */
+<script>
+    /* $("#panels").accordion(); */
+    var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+</script>
+
+</html>
