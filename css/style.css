@@ -833,3 +833,33 @@ p.change_link{
     opacity: 1;
 }
 
+
+
+
+
+/* /////// **Media query css ////// */
+
+/* big landscape tablets, laptops, and desktops */
+@media (min-width:1200px) { 
+
+}
+
+/* tablet, low resolution dektop and laptop */
+@media (max-width: 990px) {
+
+}
+
+/* portrait laptop */
+@media (max-width: 800px) {
+
+}
+
+/* smartphone, iPhone */
+@media (max-width: 600px) {
+
+}
+
+/* smartphone, portrait iPhone, portrait 480x320 phones */
+@media (max-width: 480px) {
+	
+}
